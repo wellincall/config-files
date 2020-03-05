@@ -16,6 +16,7 @@ Plug 'alvan/vim-closetag'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'storyn26383/vim-vue'
 Plug 'townk/vim-autoclose'
+Plug 'dense-analysis/ale'
 Plug 'isruslan/vim-es6'
 call plug#end()
 
