@@ -51,3 +51,10 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.html.erb,*.xml,*.vue'
 
 " mark 80th column
 set colorcolumn=80
+
+" shortcuts to navigate between windows
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
