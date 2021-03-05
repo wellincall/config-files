@@ -18,6 +18,7 @@ Plug 'storyn26383/vim-vue'
 Plug 'townk/vim-autoclose'
 Plug 'dense-analysis/ale'
 Plug 'isruslan/vim-es6'
+Plug 'tweekmonster/django-plus.vim'
 call plug#end()
 
 " toggle nerdTree
@@ -59,3 +60,5 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 set noswapfile
+set ignorecase
+set smartcase
