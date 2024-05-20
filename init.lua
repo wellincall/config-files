@@ -33,7 +33,10 @@ require("lazy").setup({
   {
     "nvim-tree/nvim-web-devicons"
   },
-  "dyng/ctrlsf.vim"
+  "dyng/ctrlsf.vim",
+  "ntpeters/vim-better-whitespace",
+  "townk/vim-autoclose",
+  "alvan/vim-closetag"
 })
 
 require("monokai").setup { italics = false }
