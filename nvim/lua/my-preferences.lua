@@ -1,39 +1,6 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
-end
-vim.opt.rtp:prepend(lazypath)
+-- updating leader keniy
 
--- updating leader key
 vim.g.mapleader = " "
-
-require("lazy").setup({
-  "tanvirtin/monokai.nvim",
-  {
-    "nvim-telescope/telescope.nvim",
-    tag = "0.1.6",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "BurntSushi/ripgrep"
-    }
-  },
-  {
-    "nvim-tree/nvim-web-devicons"
-  },
-  "dyng/ctrlsf.vim",
-  "ntpeters/vim-better-whitespace",
-  "townk/vim-autoclose",
-  "alvan/vim-closetag"
-})
-
-require("monokai").setup { italics = false }
 
 -- cursor line
 vim.opt.cursorline = true
@@ -83,9 +50,6 @@ vim.keymap.set("n", "<C-J>", "<C-W><C-J>")
 vim.keymap.set("n", "<C-K>", "<C-W><C-K>")
 vim.keymap.set("n", "<C-L>", "<C-W><C-L>")
 
--- mapping for Neotree
-vim.keymap.set("n", "<C-n>", ":Neotree toggle<CR>")
-
 -- using compact mode for CtrlSF
 vim.g.ctrlsf_default_view_mode = "compact"
 
@@ -94,5 +58,3 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 -- time to execute bindings
 vim.opt.updatetime = 50
-
-require("telescope")
