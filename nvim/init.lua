@@ -43,9 +43,11 @@ require("lazy").setup({
       'nvim-telescope/telescope.nvim',
     },
     cmd = 'Nerdy',
-  }
+  },
+  { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 })
 
 require("plugins/monokai")
 require("plugins/telescope")
 require("plugins/telescope-file-browser")
+require("plugins/treesitter")
