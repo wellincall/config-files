@@ -105,3 +105,4 @@ ZVM_CURSOR_STYLE_ENABLED=false
 
 
 alias vim="nvim"
+alias tmux="tmux -2"
