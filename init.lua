@@ -11,17 +11,11 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- updating leader key
+vim.g.mapleader = " "
+
 require("lazy").setup({
   "tanvirtin/monokai.nvim",
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons",
-      "MunifTanjim/nui.nvim"
-    }
-  },
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.6",
@@ -40,16 +34,6 @@ require("lazy").setup({
 })
 
 require("monokai").setup { italics = false }
-require("neo-tree").setup({
-  filesystem = {
-    hijack_netrw_behavior = "open_default"
-  }
-})
-
-require("telescope")
-
--- updating leader key
-vim.g.mapleader = " "
 
 -- cursor line
 vim.opt.cursorline = true
@@ -107,3 +91,8 @@ vim.g.ctrlsf_default_view_mode = "compact"
 
 -- substitute current selection
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- time to execute bindings
+vim.opt.updatetime = 50
+
+require("telescope")
