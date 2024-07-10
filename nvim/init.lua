@@ -44,10 +44,23 @@ require("lazy").setup({
     },
     cmd = 'Nerdy',
   },
-  { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+  { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
+      "3rd/image.nvim"
+    }
+
+  }
+
 })
 
 require("plugins/monokai")
+require("plugins/neo-tree")
 require("plugins/telescope")
 require("plugins/telescope-file-browser")
 require("plugins/treesitter")
