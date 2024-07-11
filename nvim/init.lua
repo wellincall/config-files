@@ -54,13 +54,15 @@ require("lazy").setup({
       "MunifTanjim/nui.nvim",
       "3rd/image.nvim"
     }
-
-  }
-
+  },
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
+  "neovim/nvim-lspconfig"
 })
 
 require("plugins/monokai")
 require("plugins/neo-tree")
+require("plugins/lsp-config")
 require("plugins/telescope")
 require("plugins/telescope-file-browser")
 require("plugins/treesitter")
