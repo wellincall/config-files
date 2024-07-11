@@ -57,12 +57,14 @@ require("lazy").setup({
   },
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
-  "neovim/nvim-lspconfig"
+  "neovim/nvim-lspconfig",
+  "lspcontainers/lspcontainers.nvim"
 })
 
 require("plugins/monokai")
 require("plugins/neo-tree")
 require("plugins/lsp-config")
+require("plugins/lspcontainers")
 require("plugins/telescope")
 require("plugins/telescope-file-browser")
 require("plugins/treesitter")
