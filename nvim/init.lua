@@ -58,7 +58,8 @@ require("lazy").setup({
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
-  "lspcontainers/lspcontainers.nvim"
+  "lspcontainers/lspcontainers.nvim",
+  "nvim-treesitter/nvim-treesitter-context"
 })
 
 require("plugins/monokai")
