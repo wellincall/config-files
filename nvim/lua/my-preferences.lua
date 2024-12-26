@@ -1,6 +1,8 @@
--- updating leader keniy
-
+-- updating leader key
 vim.g.mapleader = " "
+
+-- no swap file
+vim.opt.swapfile = false
 
 -- cursor line
 vim.opt.cursorline = true
