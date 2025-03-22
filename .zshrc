@@ -70,7 +70,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose zsh-vi-mode)
+plugins=(git docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,8 +101,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-ZVM_CURSOR_STYLE_ENABLED=false
-ZVM_ESCAPE_KEYTIMEOUT=0.03
+
+# vi-mode via zsh
+set -e vi
 
 alias tmux="tmux -2"
 
